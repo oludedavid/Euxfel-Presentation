@@ -12,27 +12,27 @@
       }
 
       body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: #333;
+        font-family: "Arial", Helvetica, sans-serif;
+        background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        color: #1f2937;
         overflow-x: hidden;
       }
 
       .presentation-container {
-        max-width: 1200px;
+        max-width: 1100px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 30px;
       }
 
       .slide {
-        background: rgba(255, 255, 255, 0.95);
-        border-radius: 20px;
-        padding: 40px;
-        margin-bottom: 30px;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        transition: all 0.3s ease;
+        background: rgba(255, 255, 255, 0.97);
+        border-radius: 15px;
+        padding: 35px;
+        margin-bottom: 25px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
         position: relative;
         overflow: hidden;
       }
@@ -43,299 +43,284 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 4px;
-        background: linear-gradient(90deg, #667eea, #764ba2);
+        height: 5px;
+        background: linear-gradient(90deg, #1e3a8a, #3b82f6);
       }
 
       .slide:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        transform: translateY(-3px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
       }
 
       .slide-header {
         display: flex;
         align-items: center;
-        margin-bottom: 30px;
-        gap: 20px;
+        margin-bottom: 25px;
+        gap: 15px;
       }
 
       .slide-number {
-        background: linear-gradient(135deg, #667eea, #764ba2);
+        background: linear-gradient(135deg, #1e3a8a, #3b82f6);
         color: white;
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-weight: bold;
-        font-size: 1.2em;
+        font-weight: 600;
+        font-size: 1.1em;
       }
 
       h1 {
-        color: #2c3e50;
-        font-size: 2.5em;
-        margin-bottom: 10px;
-        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: #1e3a8a;
+        font-size: 2.8em;
+        margin-bottom: 15px;
+        background: linear-gradient(135deg, #1e3a8a, #3b82f6);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-clip: text;
       }
 
       h2 {
-        color: #34495e;
-        font-size: 2em;
-        margin-bottom: 20px;
+        color: #1f2937;
+        font-size: 1.8em;
+        margin-bottom: 15px;
         flex: 1;
       }
 
       h3 {
-        color: #2980b9;
-        font-size: 1.4em;
-        margin-bottom: 15px;
-        border-left: 4px solid #3498db;
-        padding-left: 15px;
+        color: #2563eb;
+        font-size: 1.3em;
+        margin-bottom: 12px;
+        border-left: 4px solid #2563eb;
+        padding-left: 12px;
       }
 
       .intro-section {
         text-align: center;
-        padding: 60px 40px;
+        padding: 50px 30px;
       }
 
       .intro-section h1 {
-        font-size: 3.5em;
-        margin-bottom: 20px;
+        font-size: 3.2em;
+        margin-bottom: 15px;
       }
 
       .intro-subtitle {
-        font-size: 1.3em;
-        color: #7f8c8d;
-        margin-bottom: 30px;
+        font-size: 1.2em;
+        color: #4b5563;
+        margin-bottom: 25px;
       }
 
       .contact-info {
         display: flex;
         justify-content: center;
-        gap: 30px;
+        gap: 20px;
         flex-wrap: wrap;
-        margin-top: 20px;
+        margin-top: 15px;
       }
 
       .contact-item {
-        background: rgba(52, 152, 219, 0.1);
-        padding: 10px 20px;
-        border-radius: 25px;
-        color: #2980b9;
+        background: rgba(37, 99, 235, 0.1);
+        padding: 8px 15px;
+        border-radius: 20px;
+        color: #2563eb;
         font-weight: 500;
+        font-size: 0.95em;
       }
 
       .tech-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 25px;
-        margin-top: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        margin-top: 15px;
       }
 
       .tech-category {
-        background: linear-gradient(
-          135deg,
-          rgba(52, 152, 219, 0.1),
-          rgba(155, 89, 182, 0.1)
-        );
-        padding: 25px;
-        border-radius: 15px;
-        border-left: 4px solid #3498db;
+        background: rgba(37, 99, 235, 0.05);
+        padding: 20px;
+        border-radius: 10px;
+        border-left: 4px solid #2563eb;
         transition: all 0.3s ease;
       }
 
       .tech-category:hover {
-        transform: translateX(10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transform: translateX(8px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
       }
 
       .tech-category h4 {
-        color: #2c3e50;
-        margin-bottom: 15px;
-        font-size: 1.1em;
+        color: #1f2937;
+        margin-bottom: 10px;
+        font-size: 1.05em;
       }
 
       .tech-list {
-        color: #555;
-        line-height: 1.6;
+        color: #374151;
+        line-height: 1.5;
+        font-size: 0.95em;
       }
 
       .project-card {
-        background: linear-gradient(
-          135deg,
-          rgba(46, 204, 113, 0.1),
-          rgba(52, 152, 219, 0.1)
-        );
-        padding: 25px;
-        border-radius: 15px;
-        margin-bottom: 20px;
-        border-left: 4px solid #27ae60;
+        background: rgba(34, 197, 94, 0.05);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        border-left: 4px solid #22c55e;
         transition: all 0.3s ease;
       }
 
       .project-card:hover {
-        transform: translateX(10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transform: translateX(8px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
       }
 
       .project-title {
-        color: #27ae60;
-        font-size: 1.3em;
-        font-weight: bold;
-        margin-bottom: 10px;
+        color: #22c55e;
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: 8px;
       }
 
       .project-tech {
-        background: rgba(39, 174, 96, 0.2);
-        color: #27ae60;
-        padding: 5px 12px;
-        border-radius: 20px;
-        font-size: 0.9em;
+        background: rgba(34, 197, 94, 0.15);
+        color: #22c55e;
+        padding: 4px 10px;
+        border-radius: 15px;
+        font-size: 0.85em;
         display: inline-block;
-        margin: 5px 5px 10px 0;
+        margin: 4px 4px 8px 0;
       }
 
       .experience-item {
-        background: linear-gradient(
-          135deg,
-          rgba(230, 126, 34, 0.1),
-          rgba(231, 76, 60, 0.1)
-        );
-        padding: 25px;
-        border-radius: 15px;
-        margin-bottom: 20px;
-        border-left: 4px solid #e67e22;
+        background: rgba(234, 179, 8, 0.05);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        border-left: 4px solid #eab308;
         position: relative;
       }
 
       .experience-period {
-        background: #e67e22;
+        background: #eab308;
         color: white;
-        padding: 5px 15px;
-        border-radius: 20px;
-        font-size: 0.9em;
+        padding: 4px 12px;
+        border-radius: 15px;
+        font-size: 0.85em;
         position: absolute;
-        top: -10px;
-        right: 20px;
+        top: -8px;
+        right: 15px;
       }
 
       .company-role {
-        color: #d35400;
-        font-size: 1.2em;
-        font-weight: bold;
-        margin-bottom: 15px;
+        color: #b45309;
+        font-size: 1.1em;
+        font-weight: 600;
+        margin-bottom: 10px;
       }
 
       .achievement {
-        color: #555;
-        margin-bottom: 8px;
-        padding-left: 20px;
+        color: #374151;
+        margin-bottom: 6px;
+        padding-left: 18px;
         position: relative;
+        font-size: 0.95em;
       }
 
       .achievement::before {
         content: "✓";
         position: absolute;
         left: 0;
-        color: #27ae60;
+        color: #22c55e;
         font-weight: bold;
       }
 
       .stats-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        margin-top: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
       }
 
       .stat-card {
         text-align: center;
-        background: linear-gradient(
-          135deg,
-          rgba(155, 89, 182, 0.1),
-          rgba(142, 68, 173, 0.1)
-        );
-        padding: 20px;
-        border-radius: 15px;
+        background: rgba(139, 92, 246, 0.05);
+        padding: 15px;
+        border-radius: 10px;
         transition: all 0.3s ease;
       }
 
       .stat-card:hover {
-        transform: scale(1.05);
+        transform: scale(1.03);
       }
 
       .stat-number {
-        font-size: 2.5em;
-        font-weight: bold;
-        color: #8e44ad;
+        font-size: 2.2em;
+        font-weight: 600;
+        color: #8b5cf6;
         display: block;
       }
 
       .stat-label {
-        color: #7f8c8d;
-        margin-top: 10px;
+        color: #4b5563;
+        margin-top: 8px;
+        font-size: 0.9em;
       }
 
       .why-xfel {
-        background: linear-gradient(
-          135deg,
-          rgba(52, 152, 219, 0.1),
-          rgba(46, 204, 113, 0.1)
-        );
-        padding: 30px;
-        border-radius: 15px;
+        background: rgba(37, 99, 235, 0.05);
+        padding: 25px;
+        border-radius: 10px;
         text-align: center;
         margin-top: 20px;
       }
 
       .navigation {
         position: fixed;
-        bottom: 30px;
-        right: 30px;
+        bottom: 25px;
+        right: 25px;
         display: flex;
         gap: 10px;
         z-index: 1000;
       }
 
       .nav-btn {
-        background: linear-gradient(135deg, #667eea, #764ba2);
+        background: linear-gradient(135deg, #1e3a8a, #3b82f6);
         color: white;
         border: none;
-        padding: 12px 20px;
-        border-radius: 25px;
+        padding: 10px 18px;
+        border-radius: 20px;
         cursor: pointer;
-        font-weight: bold;
+        font-weight: 600;
+        font-size: 0.9em;
         transition: all 0.3s ease;
       }
 
       .nav-btn:hover {
         transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       }
 
       .slide-indicator {
         position: fixed;
-        top: 30px;
-        right: 30px;
+        top: 25px;
+        right: 25px;
         background: rgba(255, 255, 255, 0.9);
-        padding: 10px 20px;
-        border-radius: 25px;
-        font-weight: bold;
-        color: #2c3e50;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-weight: 600;
+        color: #1f2937;
+        font-size: 0.9em;
         z-index: 1000;
       }
 
       @media (max-width: 768px) {
         .presentation-container {
-          padding: 10px;
+          padding: 15px;
         }
 
         .slide {
-          padding: 20px;
+          padding: 25px;
         }
 
         .tech-grid {
@@ -345,6 +330,10 @@
         .contact-info {
           flex-direction: column;
           align-items: center;
+        }
+
+        .intro-section h1 {
+          font-size: 2.5em;
         }
       }
     </style>
@@ -364,15 +353,13 @@
             <div class="contact-item">📍 NRW, Germany</div>
             <div class="contact-item">📧 odavidolumide@gmail.com</div>
             <div class="contact-item">📱 +49 176 30568707</div>
+            <div class="contact-item">🔗 github.com/olumidedavid</div>
           </div>
           <div class="why-xfel">
-            <h3>
-              Applying for: Fullstack Application Developer (Python/React) -
-              E-384
-            </h3>
-            <p style="margin-top: 15px; font-size: 1.1em; color: #555">
-              Passionate about building scalable web applications for scientific
-              research and innovation
+            <h3>Fullstack Application Developer (Python/React) - E-384</h3>
+            <p style="margin-top: 12px; font-size: 1.05em; color: #374151">
+              Committed to advancing scientific research through robust,
+              scalable web applications
             </p>
           </div>
         </div>
@@ -389,9 +376,9 @@
           <div class="tech-category">
             <h4>🎨 Frontend Development</h4>
             <div class="tech-list">
-              <strong>React.js</strong>, Next.js, TypeScript<br />
-              <strong>HTML5/CSS3</strong>, TailwindCSS<br />
-              <strong>MUI Components</strong>, Responsive Design<br />
+              React.js, Next.js, TypeScript<br />
+              HTML5, CSS3, TailwindCSS<br />
+              MUI Components, Responsive Design<br />
               Performance Optimization, SEO
             </div>
           </div>
@@ -399,9 +386,9 @@
           <div class="tech-category">
             <h4>⚙️ Backend Development</h4>
             <div class="tech-list">
-              <strong>Python</strong> (Flask, <strong>FastAPI</strong>)<br />
+              Python (Flask, FastAPI)<br />
               Node.js, Express.js, NestJS<br />
-              <strong>RESTful APIs</strong>, GraphQL<br />
+              RESTful APIs, GraphQL<br />
               SQLAlchemy, ORM Integration
             </div>
           </div>
@@ -409,9 +396,9 @@
           <div class="tech-category">
             <h4>🗄️ Database Systems</h4>
             <div class="tech-list">
-              <strong>PostgreSQL</strong>, <strong>MySQL</strong><br />
+              PostgreSQL, MySQL<br />
               MongoDB, Mongoose<br />
-              Database Design & Optimization<br />
+              Database Optimization<br />
               Query Performance Tuning
             </div>
           </div>
@@ -419,9 +406,9 @@
           <div class="tech-category">
             <h4>🚀 DevOps & Tools</h4>
             <div class="tech-list">
-              <strong>Git</strong>, Azure DevOps<br />
-              <strong>CI/CD Pipelines</strong><br />
-              Cypress Testing, Unit Testing<br />
+              Git, Azure DevOps<br />
+              CI/CD Pipelines<br />
+              Cypress, Unit Testing<br />
               Google Cloud Functions
             </div>
           </div>
@@ -430,15 +417,15 @@
         <div class="stats-grid">
           <div class="stat-card">
             <span class="stat-number">5+</span>
-            <div class="stat-label">Years Experience</div>
+            <div class="stat-label">Years of Experience</div>
           </div>
           <div class="stat-card">
-            <span class="stat-number">85%</span>
+            <span class="stat-number">85%+</span>
             <div class="stat-label">Test Coverage</div>
           </div>
           <div class="stat-card">
             <span class="stat-number">40%</span>
-            <div class="stat-label">Performance Improvement</div>
+            <div class="stat-label">Faster Deployments</div>
           </div>
           <div class="stat-card">
             <span class="stat-number">99.9%</span>
@@ -455,23 +442,19 @@
         </div>
 
         <div class="project-card">
-          <div class="project-title">
-            🤖 Spire - AI-Powered Onboarding Platform
-          </div>
+          <div class="project-title">🤖 Spire - AI Onboarding Platform</div>
           <div class="project-tech">Next.js</div>
           <div class="project-tech">Python</div>
           <div class="project-tech">LangChain</div>
-          <div class="project-tech">OpenAI GPT</div>
-          <div class="project-tech">RAG Agents</div>
+          <div class="project-tech">GPT-4o</div>
           <div class="achievement">
-            Built intelligent chatbot with message streaming and session
-            management
+            Developed AI chatbot with real-time message streaming
           </div>
           <div class="achievement">
-            Implemented RAG operations for enhanced query accuracy
+            Integrated RAG agents for enhanced query accuracy
           </div>
           <div class="achievement">
-            Created scalable onboarding process management system
+            Built scalable onboarding system for SaaS
           </div>
         </div>
 
@@ -481,19 +464,11 @@
           <div class="project-tech">TypeScript</div>
           <div class="project-tech">TailwindCSS</div>
           <div class="project-tech">Cypress</div>
-          <div class="project-tech">Azure DevOps</div>
           <div class="achievement">
-            Developed real-time inventory management system
+            Created real-time inventory management dashboard
           </div>
-          <div class="achievement">
-            Improved page load times by 30% through optimization
-          </div>
-          <div class="achievement">
-            Established comprehensive testing infrastructure (85% coverage)
-          </div>
-          <div class="achievement">
-            Reduced deployment time by 40% with CI/CD pipelines
-          </div>
+          <div class="achievement">Reduced page load times by 30%</div>
+          <div class="achievement">Achieved 85% test coverage with Cypress</div>
         </div>
 
         <div class="project-card">
@@ -502,16 +477,13 @@
           <div class="project-tech">Flask</div>
           <div class="project-tech">GPT-3</div>
           <div class="project-tech">Google Cloud</div>
-          <div class="project-tech">Dialogflow CX</div>
           <div class="achievement">
             Built AI assistant handling 1,000+ daily interactions
           </div>
           <div class="achievement">
             Designed scalable cloud functions with 99.9% uptime
           </div>
-          <div class="achievement">
-            Created RESTful APIs for seamless integration
-          </div>
+          <div class="achievement">Developed robust RESTful APIs</div>
         </div>
       </div>
 
@@ -524,56 +496,46 @@
 
         <div class="experience-item">
           <div class="experience-period">04/2025 - Present</div>
-          <div class="company-role">Full-Stack Developer | Ineko GmbH</div>
-          <div class="achievement">
-            Developing AI chatbot using Flask, LangChain, and GPT-4o for SaaS
-            applications
+          <div class="company-role">
+            Full-Stack Developer | Ineko GmbH, Köln
           </div>
           <div class="achievement">
-            Building REST APIs and responsive UIs with React, Next.js, and
-            TypeScript
+            Developed AI chatbot with Flask, LangChain, GPT-4o
           </div>
           <div class="achievement">
-            Implementing comprehensive testing and CI/CD workflows
+            Built responsive UIs with React, Next.js, TypeScript
+          </div>
+          <div class="achievement">
+            Implemented CI/CD pipelines with 85% test coverage
           </div>
         </div>
 
         <div class="experience-item">
           <div class="experience-period">04/2024 - 10/2024</div>
-          <div class="company-role">Web Developer | Carbyte GmbH</div>
-          <div class="achievement">
-            Built responsive applications with TypeScript, Next.js & React
+          <div class="company-role">
+            Web Developer | Carbyte GmbH, Stuttgart
           </div>
           <div class="achievement">
-            Established Cypress testing infrastructure with 85% coverage
+            Built responsive apps with Next.js, TypeScript, React
           </div>
           <div class="achievement">
-            Reduced deployment time by 40% through Azure DevOps implementation
-          </div>
-        </div>
-
-        <div class="experience-item">
-          <div class="experience-period">03/2024 - 09/2024</div>
-          <div class="company-role">Fullstack Developer | FH Südwestfalen</div>
-          <div class="achievement">
-            Developed AI-powered chatbot using GPT-3 & Google Dialogflow CX
+            Reduced deployment time by 40% via Azure DevOps
           </div>
           <div class="achievement">
-            Built scalable cloud functions handling 1K+ daily interactions
-          </div>
-          <div class="achievement">
-            Designed RESTful APIs with Python achieving 99.9% uptime
+            Established 85% test coverage with Cypress
           </div>
         </div>
 
         <div class="experience-item">
           <div class="experience-period">03/2023 - 12/2023</div>
-          <div class="company-role">Web Developer | Testia (Airbus)</div>
-          <div class="achievement">
-            Optimized website performance - 40% faster load times
+          <div class="company-role">
+            Web Developer | Testia (Airbus), Bremen
           </div>
           <div class="achievement">
-            Deployed A/B testing framework boosting engagement by 25%
+            Optimized website for 40% faster load times
+          </div>
+          <div class="achievement">
+            Increased engagement by 25% with A/B testing
           </div>
           <div class="achievement">
             Managed WordPress site with 100K+ monthly visitors
@@ -589,56 +551,53 @@
         </div>
 
         <div class="why-xfel">
-          <h3>🔬 Passion for Scientific Innovation</h3>
-          <p style="margin: 15px 0; font-size: 1.1em; text-align: left">
-            I'm excited about contributing to cutting-edge X-ray laser research
-            that advances physics, chemistry, and life sciences. My experience
-            with high-performance applications aligns perfectly with the demands
-            of scientific computing environments.
+          <h3>🔬 Driving Scientific Discovery</h3>
+          <p style="margin: 12px 0; font-size: 1.05em; text-align: left">
+            My passion for building high-performance web applications aligns
+            with XFEL's mission to advance scientific research through
+            cutting-edge technology.
           </p>
         </div>
 
-        <div class="tech-grid" style="margin-top: 30px">
+        <div class="tech-grid" style="margin-top: 20px">
           <div class="tech-category">
-            <h4>🎯 Perfect Technical Match</h4>
+            <h4>🎯 Technical Fit</h4>
             <div class="tech-list">
-              ✓ <strong>Python & FastAPI</strong> expertise<br />
-              ✓ <strong>React & TypeScript</strong> proficiency<br />
-              ✓ <strong>PostgreSQL/MySQL</strong> experience<br />
-              ✓ <strong>Git & CI/CD</strong> workflows<br />
-              ✓ <strong>MUI Components</strong> knowledge
+              ✓ Python (Flask, FastAPI)<br />
+              ✓ React, Next.js, TypeScript<br />
+              ✓ PostgreSQL, MySQL<br />
+              ✓ Git, CI/CD Pipelines<br />
+              ✓ MUI Components
             </div>
           </div>
 
           <div class="tech-category">
-            <h4>🌟 Added Value</h4>
+            <h4>🌟 Value Proposition</h4>
             <div class="tech-list">
-              ✓ <strong>UX Design</strong> focus<br />
-              ✓ <strong>Performance optimization</strong><br />
-              ✓ <strong>Testing frameworks</strong><br />
-              ✓ <strong>International collaboration</strong><br />
-              ✓ <strong>Agile methodologies</strong>
+              ✓ Real-time data visualization<br />
+              ✓ Performance optimization<br />
+              ✓ Scalable cloud solutions<br />
+              ✓ Agile collaboration<br />
+              ✓ Testing & reliability
             </div>
           </div>
         </div>
 
-        <div class="why-xfel" style="margin-top: 30px">
-          <h3>🤝 International Collaboration</h3>
-          <p style="margin: 15px 0; font-size: 1.1em; text-align: left">
-            Having worked in diverse, multicultural teams across Germany, I
-            understand the importance of clear communication and collaborative
-            development. I'm fluent in English and German (C1), ready to
-            contribute to XFEL's international research community.
+        <div class="why-xfel" style="margin-top: 20px">
+          <h3>🤝 Global Team Synergy</h3>
+          <p style="margin: 12px 0; font-size: 1.05em; text-align: left">
+            Fluent in English and German (C1), I thrive in international,
+            multidisciplinary teams, ensuring seamless collaboration and clear
+            communication.
           </p>
         </div>
 
-        <div class="why-xfel" style="margin-top: 30px">
-          <h3>🚀 SCADA Web Applications</h3>
-          <p style="margin: 15px 0; font-size: 1.1em; text-align: left">
-            My experience with real-time dashboards, data visualization, and
-            high-uptime systems positions me well to enhance the Karabo SCADA
-            Web applications and contribute to the facility's operational
-            excellence.
+        <div class="why-xfel" style="margin-top: 20px">
+          <h3>🚀 Karabo SCADA Expertise</h3>
+          <p style="margin: 12px 0; font-size: 1.05em; text-align: left">
+            My experience with real-time dashboards, RESTful APIs, and
+            high-uptime systems equips me to enhance XFEL's Karabo SCADA web
+            applications.
           </p>
         </div>
       </div>
@@ -651,32 +610,32 @@
         </div>
 
         <div class="intro-section">
-          <h3 style="color: #2c3e50; margin-bottom: 30px">
-            Ready to Contribute to Scientific Excellence
+          <h3 style="color: #1f2937; margin-bottom: 25px">
+            Ready to Empower XFEL's Mission
           </h3>
 
           <div class="why-xfel">
-            <p style="font-size: 1.2em; margin-bottom: 20px">
-              I'm excited about the opportunity to join European XFEL's
-              innovative team and contribute to advancing X-ray laser technology
-              through robust, user-friendly web applications.
+            <p style="font-size: 1.15em; margin-bottom: 15px">
+              I'm eager to contribute my Python, React, and DevOps expertise to
+              build robust, scalable web applications for European XFEL's
+              groundbreaking research.
             </p>
 
-            <div class="stats-grid" style="margin-top: 30px">
+            <div class="stats-grid" style="margin-top: 25px">
               <div class="stat-card">
-                <span class="stat-number" style="font-size: 1.8em">🎯</span>
-                <div class="stat-label">Technical Excellence</div>
+                <span class="stat-number" style="font-size: 1.6em">🎯</span>
+                <div class="stat-label">Technical Precision</div>
               </div>
               <div class="stat-card">
-                <span class="stat-number" style="font-size: 1.8em">🤝</span>
-                <div class="stat-label">Team Collaboration</div>
+                <span class="stat-number" style="font-size: 1.6em">🤝</span>
+                <div class="stat-label">Collaborative Spirit</div>
               </div>
               <div class="stat-card">
-                <span class="stat-number" style="font-size: 1.8em">🚀</span>
-                <div class="stat-label">Innovation Focus</div>
+                <span class="stat-number" style="font-size: 1.6em">🚀</span>
+                <div class="stat-label">Innovation Drive</div>
               </div>
               <div class="stat-card">
-                <span class="stat-number" style="font-size: 1.8em">🔬</span>
+                <span class="stat-number" style="font-size: 1.6em">🔬</span>
                 <div class="stat-label">Scientific Impact</div>
               </div>
             </div>
@@ -684,23 +643,18 @@
 
           <div
             style="
-              margin-top: 40px;
-              padding: 30px;
-              background: linear-gradient(
-                135deg,
-                rgba(52, 152, 219, 0.1),
-                rgba(46, 204, 113, 0.1)
-              );
-              border-radius: 15px;
+              margin-top: 30px;
+              padding: 25px;
+              background: rgba(37, 99, 235, 0.05);
+              border-radius: 10px;
             "
           >
-            <h3 style="color: #27ae60; margin-bottom: 20px">
-              Questions & Discussion
+            <h3 style="color: #22c55e; margin-bottom: 15px">
+              Questions & Next Steps
             </h3>
-            <p style="font-size: 1.1em; color: #555">
-              I'm looking forward to discussing how my experience with Python,
-              React, FastAPI, and high-performance web applications can
-              contribute to the Karabo SCADA system and European XFEL's mission.
+            <p style="font-size: 1.05em; color: #374151">
+              I'm excited to discuss how my skills in Python, React, and SCADA
+              systems can support XFEL's research goals. Let's connect!
             </p>
           </div>
         </div>
@@ -728,7 +682,6 @@
           "slideIndicator"
         ).textContent = `Slide ${currentSlide} of ${totalSlides}`;
 
-        // Smooth scroll to top of current slide
         document.getElementById(`slide${currentSlide}`).scrollIntoView({
           behavior: "smooth",
           block: "start",
@@ -745,7 +698,6 @@
         showSlide(currentSlide);
       }
 
-      // Keyboard navigation
       document.addEventListener("keydown", function (e) {
         if (e.key === "ArrowRight" || e.key === " ") {
           nextSlide();
@@ -754,13 +706,7 @@
         }
       });
 
-      // Initialize presentation
       showSlide(1);
-
-      // Auto-scroll to active slide every 30 seconds (optional)
-      // setInterval(() => {
-      //     nextSlide();
-      // }, 30000);
     </script>
   </body>
 </html>
